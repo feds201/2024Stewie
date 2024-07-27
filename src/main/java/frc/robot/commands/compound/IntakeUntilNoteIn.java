@@ -10,7 +10,7 @@ import edu.wpi.first.wpilibj2.command.SequentialCommandGroup;
 import edu.wpi.first.wpilibj2.command.WaitCommand;
 import edu.wpi.first.wpilibj2.command.button.CommandXboxController;
 import frc.robot.commands.controller.ToggleRumble;
-import frc.robot.commands.intake.RunIntakeWheels;
+import frc.robot.commands.intaker.RunIntakeWheels;
 import frc.robot.commands.leds.SetLEDColor;
 import frc.robot.constants.IntakeConstants;
 import frc.robot.subsystems.intake.IntakeIRSensor;
