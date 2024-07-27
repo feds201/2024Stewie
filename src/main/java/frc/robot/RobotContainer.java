@@ -38,15 +38,15 @@ import edu.wpi.first.wpilibj2.command.SequentialCommandGroup;
 import edu.wpi.first.wpilibj2.command.WaitCommand;
 import edu.wpi.first.wpilibj2.command.button.CommandXboxController;
 import edu.wpi.first.wpilibj2.command.button.Trigger;
-import frc.robot.commands.intake.RotateWristToPosition;
-import frc.robot.commands.intake.RotateWristToPositionInfinite;
-import frc.robot.commands.intake.RunIntakeWheels;
 import frc.robot.commands.arm.RotateArmToPosition;
 import frc.robot.commands.arm.RotateArmManual;
 import frc.robot.commands.autons.DriveForwardForTime;
 import frc.robot.commands.climber.ExtendClimber;
 import frc.robot.commands.compound.*;
 import frc.robot.commands.controller.ToggleRumble;
+import frc.robot.commands.intaker.RotateWristToPosition;
+import frc.robot.commands.intaker.RotateWristToPositionInfinite;
+import frc.robot.commands.intaker.RunIntakeWheels;
 import frc.robot.commands.leds.SetLEDColor;
 import frc.robot.commands.shooter.*;
 import frc.robot.commands.swerve.AimToAprilTag;
@@ -275,12 +275,12 @@ public class RobotContainer {
                 new WaitCommand(0.8),
                 drivetrain.getAutoPath("2 Note Shoot Then Move"))));
         
-        autonChooser.addOption("Place Arm Down and 2 note source side", new ParallelCommandGroup(
+        /*autonChooser.addOption("Place Arm Down and 2 note source side", new ParallelCommandGroup(
             new RotateArmToPosition(arm,
                 () -> ArmConstants.ArmPIDForExternalEncoder.kArmRotationFeederSetpoint),
             new SequentialCommandGroup(
                 new WaitCommand(0.8),
-                drivetrain.getAutoPath("2 Note Move Then Shoot Source Side"))));
+                drivetrain.getAutoPath("2 Note Move Then Shoot Source Side"))));*/
         
         Shuffleboard.getTab("autons").add(autonChooser);
     }

@@ -5,8 +5,8 @@
 package frc.robot.commands.compound;
 
 import edu.wpi.first.wpilibj2.command.ParallelCommandGroup;
-import frc.robot.commands.intake.RotateWristToPosition;
-import frc.robot.commands.intake.RunIntakeWheels;
+import frc.robot.commands.intaker.RotateWristToPosition;
+import frc.robot.commands.intaker.RunIntakeWheels;
 import frc.robot.constants.IntakeConstants;
 import frc.robot.subsystems.intake.IntakeWheels;
 import frc.robot.subsystems.intake.Wrist;

@@ -9,8 +9,8 @@ import edu.wpi.first.wpilibj2.command.SequentialCommandGroup;
 import edu.wpi.first.wpilibj2.command.WaitCommand;
 import frc.robot.subsystems.intake.IntakeWheels;
 import frc.robot.subsystems.intake.Wrist;
-import frc.robot.commands.intake.RotateWristToPosition;
-import frc.robot.commands.intake.RunIntakeWheels;
+import frc.robot.commands.intaker.RotateWristToPosition;
+import frc.robot.commands.intaker.RunIntakeWheels;
 import frc.robot.constants.IntakeConstants;
 
 // NOTE:  Consider using this command inline, rather than writing a subclass.  For more
